@@ -1,0 +1,290 @@
+
+
+.height{
+
+    height: 100vh;
+}
+
+.form{
+
+    position: relative;
+    
+}
+
+.form .fa-search{
+
+    position: absolute;
+    top:16px;
+    left: 20px;
+    
+    
+
+}
+
+.form span{
+
+        position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan{
+    padding-left: 7px;
+}
+
+.left-pan i{
+   
+   padding-left: 10px;
+}
+
+.form-input{
+
+    height: 45px;
+    text-indent: 33px;
+    border-radius: 25px;
+    background-color: #f5f5f5;
+    border: transparent;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+.line{
+    color: #d1d5db;
+}
+.tab .nav-link{
+    color: gray;
+    font-weight: 600;
+}
+.tab{
+    /* border-bottom: 1px solid gainsboro; */
+    padding: 10px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    border-bottom: 2px solid red !important;
+    border-radius: 0%;
+    background-color: transparent;
+    color: gray;
+}
+.slider .slick-slide {
+    outline: none;
+}
+.slider-nav .slick-slide {
+    cursor: pointer;
+}
+.slider-nav .slick-current {
+    border: 2px solid #007bff;
+}
+.slider-nav {
+    margin-top: 10px;
+}
+.price{
+    font-size: 22px;
+}
+.sofa-img{
+    height: 100%;
+    width: 60%;
+ 
+    padding: 0px 10px 0px 10px;
+}
+/* Zoom In #1 */
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  figure img {
+    margin: 0;
+    padding: 0;
+  }
+  .modal-backdrop {
+
+    width: 74vw;
+  }  
+  .offcanvas2 {
+    position: fixed;
+    bottom: 0;
+    z-index: var(--bs-offcanvas-zindex);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: var(--bs-offcanvas-color);
+    visibility: hidden;
+    background-color: var(--bs-offcanvas-bg);
+    background-clip: padding-box;
+    outline: 0;
+    transition: var(--bs-offcanvas-transition);
+}
+.offcanvas2.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: var(--bs-offcanvas-width);
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(100%);
+}
+.offcanvas2.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+}
+
+.offcanvas2.hiding, .offcanvas.show, .offcanvas.showing {
+    visibility: visible;
+}
+
+.black {
+    background-color: whitesmoke;
+    color: white;
+}
+
+.footer-title {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    border-left: 3px solid black;
+    padding-left: 15px;
+}
+
+.list {
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: black;
+    font-weight: 400;
+}
+
+.list1 {
+    margin-bottom: 7px;
+    color: black;
+}
+
+.list1:hover {
+    color: black;
+}
+
+.icon {
+    color: black;
+}
+
+.foot {
+    line-height: 1.8rem;
+}
+
+.rhyssa {
+    color: black;
+}
+
+.copyright {
+    font-size: 14px;
+    color: black;
+    float: left;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.rights {
+    text-align: right;
+}
+
+.footicon {
+    border-radius: 4px;
+    width: 50px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 14px;
+    }
+
+    .list {
+        font-size: 17px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+    .rights {
+        text-align: center;
+    }
+}
+li{
+    list-style-type: none;
+}
+.accordion-header {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.accordion{
+    --bs-accordion-active-bg:transparent ;
+    border: none;
+    --bs-accordion-btn-focus-box-shadow:none;
+}
+
+
+
+swiper-container {
+    width: 100%;
+    height: 60%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  } */
+  .swiperimg{
+    width: 70%;
+    height: 0%;
+    display: block;
+    object-fit: contain;
+  }
+  .star{
+font-size: 13px;
+  }
+  .swiperprice{
+    font-size: 12px;
+  }
+  .cartcheck a{
+    background-color: #0c59ab;
+    border-radius: 30px;
+    color: white;
+    width: 16%;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  .cartcheck a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0%;
+  }
+  .bi-heart::before {
+    content: "\f417";
+    padding: 10px;
+}

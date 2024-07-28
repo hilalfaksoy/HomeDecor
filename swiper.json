@@ -1,0 +1,20 @@
+
+  "tags": [
+    "swiper"
+  ],
+  "name": "Swiper - Navigation",
+  "dependencies": {
+    "swiper": "latest",
+    "parcel-bundler": "^1.6.1"
+  }
+  
+}
+"tags": [
+  "swiper"
+],
+"name": "Swiper - Slides Per View",
+"dependencies": {
+  "swiper": "latest",
+  "parcel-bundler": "^1.6.1"
+}
+}
