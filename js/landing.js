@@ -65,6 +65,7 @@ function showSlides(n) {
 }
 
 
+
   const countDown = new Date("August 30, 2024 11:45:53").getTime();
   const second = 1000;
   const minute = second * 60;
