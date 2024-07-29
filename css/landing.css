@@ -194,6 +194,12 @@
   }
 
 /* For categories section */
+.category-link{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
 .categories-collection{
     background-color: #f0f0f0;
 }
