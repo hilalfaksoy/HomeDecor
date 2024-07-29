@@ -1,0 +1,193 @@
+/* Navigation bar container */
+.nav-header {
+    box-sizing: border-box;
+}
+
+#username-welcome {
+    color: white;
+    padding-left: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #008080;
+    height: 60px;
+    width: 100%;
+}
+
+/* Navigation links container */
+.nav-links {
+    height: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+/* Hover state for navigation items */
+.nav-links li:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.nav-links li:hover a {
+    color: white;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: #008080;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+        color: white;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 10%;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header.banner {
+    background-color: #008080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.category-image{
+    width: 20%;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.category{
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+}
+
+
+.category:hover{
+    transform: scale(1.03);
+}
+
+.categories, .contractors {
+    margin-bottom: 20px;
+}
+
+.categories h2, .contractors h2 {
+    color: #008080;
+}
+
+#service-list, #contractor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category, .contractor {
+    background-color: white;
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+}
+
+.contractor{
+    transition: all 0.3s ease-in;
+}
+
+
+.contractor:hover{
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    .category, .contractor {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .category, .contractor {
+        flex: 1 1 100%;
+    }
+}

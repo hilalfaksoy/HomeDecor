@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+
+/* For navigation bar */
+.nav-header{
+    box-sizing: border-box;
+    /* margin: 1rem; */
+}
+
+#username-welcome {
+    color: white;
+    padding-left: 10px;
+}
+
+.navbar {
+    margin: 0;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-family: "Poppins";
+    background-color: #008080;
+    height: 60px;
+    width: 100%;
+    
+}
+
+.nav-links {
+    height: 100%;
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 20px;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links li:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.nav-links li:hover a {
+    
+    color: white;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger-menu .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+        background-color: #008080;
+    }
+
+    .nav-links ul li {
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        padding: .5rem 1rem;
+        color: white;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* For product list */
+.product-category{
+    padding-top: 40px;
+    padding-left: 5em;
+    
+}
+
+.product-description{
+    font-family: 'Poppins';
+    padding-left: 10em;
+    
+  
+}
+
+.buttons {
+    font-size: 22px;
+    margin-top: 2%;
+    margin-left: 4.2%;
+}
+
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+
+.section-grid {
+    display: flex;
+   
+}
+
+.grid-product {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 10em;
+    padding-right: 10em; 
+}
+
+.product-grid {
+    flex: 1 1 25%;
+    margin: 2%; 
+    padding: 12px;
+   
+}
+
+.product-grid img {
+    width: 100%;
+}
+
+.product-title,
+.product-type {
+    
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.product-price{
+    color: orangered;
+    font-weight: 600;
+}
+
+.btn {
+    cursor: pointer;
+    background: #008080;
+    border: 1px solid #008080;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    position: right;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: white;
+    border: 2px solid #008080;
+    border-radius: 6px;
+    color: #008080;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    position: right;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.out-of-stock{
+    color: #444f36;
+    font-weight: 600;
+}
+
+iframe {
+    padding: 10px;
+    height: 350px;
+    width: 300px;
+}
+
+footer {
+    background-color: #008080;
+    color: white;
+    /* padding: 50px 0 20px; */
+    font-family: Arial, sans-serif;
+    padding: 50px;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444f36;
+    position: relative;
+}
+
+input{
+    width: 400px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+textarea{
+    padding: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+}
