@@ -193,8 +193,8 @@
     .prev, .next {font-size: 11px}
   }
 
-/* For new-in collection section */
-.newin-collection{
+/* For categories section */
+.categories-collection{
     background-color: #f0f0f0;
 }
 
@@ -203,7 +203,7 @@
 }
 
 
-.product-list{
+.category-list{
     
     height: 400px;
     display: flex;
@@ -214,31 +214,27 @@
     padding-right: 20px;
 }
 
-.product:hover{
+.category:hover{
     cursor: pointer;
 }
 
 
-.product img{
+.category img{
     width: 300px;
     height: 300px;
 }
 
-.product-name{
-    font-size: 12px;
+.category-name{
+    font-size: 18px;
+    text-align: center;
     font-weight: 600;
 }
 
-.product-price{
-    font-size: 14px;
-    font-weight: 600;
-    color: orangered;
-}
 
 
 /* For Deals of the Day section */
 
-#deals-of-week{
+#deals-of-month{
     padding-top: 30px;
 }
 
