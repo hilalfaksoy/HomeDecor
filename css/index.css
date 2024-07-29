@@ -253,15 +253,15 @@ swiper-container {
     align-items: center;
   }
 
-  /* swiper-slide img {
+  swiper-slide img {
     display: block;
     width: 50%;
     height: 50%;
     object-fit: contain;
-  } */
+  }
   .swiperimg{
     width: 70%;
-    height: 0%;
+    height: 50%;
     display: block;
     object-fit: contain;
   }
@@ -287,4 +287,9 @@ font-size: 13px;
   .bi-heart::before {
     content: "\f417";
     padding: 10px;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 80% !important;
 }
