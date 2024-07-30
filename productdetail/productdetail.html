@@ -1,0 +1,728 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- header  -->
+
+  <div class="productPage">
+    <div class="bg-dark">
+      <div class="d-flex flex-row mb-3 justify-content-center text-white">
+        <div class="p-2 mx-4"><i class="fa fa-phone text-white mx-2" aria-hidden="true"></i>Order By Phone</div>
+        <div class="p-2 mx-5"><i class="bi bi-people-fill mx-2"></i>Family Sale</div>
+        <div class="p-2 mx-4"><i class="bi bi-receipt mx-2"></i>Sale</div>
+      </div>
+    </div>
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg ">
+
+        <div class="container-fluid">
+
+          <a class="navbar-brand" href="#"><img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg"></a>
+          <div class="col-md-3">
+
+            <div class="form">
+              <i class="fa fa-search"></i>
+              <input type="text" class="form-control form-input" placeholder="Search anything...">
+              <span class="left-pan"><i class="fa fa-camera"></i></span>
+            </div>
+
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-truck mx-2"></i>Enter
+                  Postal Code</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-shop mx-2"></i>Select
+                  store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-person mx-2"></i>hey! Login
+                  or Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-globe2 mx-2"></i></i>EN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-suit-heart"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active mx-3" aria-current="page" href="../cart.html"><i class="bi bi-bag"></i></a>
+              </li>
+            </ul>
+            <i class="fa fa-heart-o text-black" aria-hidden="true"></i>
+          </div>
+        </div>
+      </nav>
+      <hr class="line my-2">
+      <ul class="nav tab
+       nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+              class="bi bi-basket3 mx-2"></i>shop products</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+              class=" mx-2bi bi-house-door"></i>Explore Rooms</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Shop deals</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Back to school</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Ideas and Inspiration</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">For business</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service and planning</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Help and support</button>
+        </li>
+
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 mx-3 bd-highlight"><img src="../images/fabric-sofas.png">
+              <p class="text-center">Fabric Sofas</p>
+            </div>
+            <div class="p-2 mx-3bd-highlight"><img src="../images/leather-coated-fabric-sofas.png">
+              <p class="text-center">Leather Sofas</p>
+            </div>
+            <div class="p-2  mx-3 bd-highlight"><img src="../images/modular-sofas.png">
+              <p class="text-center">modular Sofas</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/sofa4.png" class="d-block w-100 h-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/sofa2.png" class="d-block w-100 h-75" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/sofa3.png" class="d-block w-100 h-75" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h5 class="my-5">
+            <p class="my-2 lh-lg">This sofa has a stylish design, with an aniline leather that only gets more<br> beautiful over the years. The cover´s natural expression makes each<br> sofa unique – and the cushion filling offers comfy support.
+          </h5>
+        </div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <p class="float-start fw-bold mb-3">MORABO
+
+                </p><span class="float-end"><i class="bi bi-heart"></i></span>
+              </div>
+            </div>
+            <p class="mb-3">Loveseat, Högalid brown/birch</p>
+            <p class="fw-bolder price">$2,490.00</p>
+            <p><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <p><i class="bi bi-water mx-2  fs-4"></i><span>Extra Soft</span></p>
+            <div>
+              <div class="col-md-12 my-4">
+                <div>
+                  <p class="float-start fw-bold mb-3">Product Details
+
+                  </p><span class="float-end"><button class="border-0 bg-transparent " type="button"
+                      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="bi bi-arrow-right"></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                      aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <h2> Product details</h2>
+                        <p> Seat cushions filled with high-resilience foam and polyester fibre wadding provide great
+                          seating comfort.</p>
+
+                        <p> These wooden legs give MORABO sofa and armchair a warm and natural look.</p>
+
+                        <p> Removable armrests make it easy to add on a chaise lounge.</p>
+
+                        <p>This cover is made of dope-dyed Gunnared fabric in polyester. It is a durable fabric with a
+                          wool-like feel, a warm look and a two-toned melange effect.</p>
+
+                        <p> 10-year limited warranty. Read about the terms in the limited warranty brochure.</p>
+
+                        <p> Designer
+                          IKEA of Sweden</p>
+                      </div>
+                    </div>
+                  </span>
+
+                </div>
+
+
+              </div>
+
+            </div>
+            <div class="my-2">
+              <p class="float-start fw-bold mb-3">How to get it
+
+              </p><span class="float-end"><u>Change Store</u></span>
+            </div>
+            <div class="card py-2" style="width: 18rem;">
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><span class="d-flex"><i class="bi bi-truck my-1 mx-2"></i>
+                    <h6>Deliver to M2H1Z3</h6>
+                  </span>
+                  <p>
+                    <i class="fa-regular fa-circle-dot mx-2 my-1"></i> Available
+                  </p>
+                </li>
+                <li class="list-group-item"><i class="bi bi-shop mx-2 my-1"></i>Ikea North York </li>
+
+              </ul>
+
+            </div>
+            <div class="row d-flex flex-row font-weight-bold">
+              <div class="col-md-4"><div class="input-group border rounded my-4">
+                <div class="input-group-prepend ">
+                  <button class="btn btn-outline-secondary border-0 fw-bold" type="button" id="decrease-quantity">-</button>
+                </div>
+                <input type="text" id="quantity" class="form-control text-center border-0 fw-bold" value="1" readonly>
+                <div class="input-group-append">
+                  <button class="btn border-0 fw-bold rounded" type="button" id="increase-quantity">+</button>
+                </div>
+              </div></div> <div class="col-md-6 my-3"><button id="add-to-cart" class="btn btn-primary mt-2">Add to Cart</button></div></div></div>
+            <div>  
+          </div>
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-body">
+                <h6 class="card-title p-2">Available Services</h6>
+             <div class="d-flex p-1"><i class="bi bi-tools mx-3"></i><p class="card-text">Have your STOCKHOLM professionally assembled. <a href=""> <br> Learn more about Assembly Service</a></p></div>   
+              
+              </div>
+            </div>
+          </div>
+          <hr class="my-3">
+          <div><i class="bi bi-recycle mx-3"></i>Have your mattress or sofa removed. <a href="">Read More</a> </div>
+        </div>
+
+      </div>
+
+    </div>
+   <div class="container"> <div class="col-md-12">
+    <div class="row mb-5">
+      <div class="col-md-6 text-center">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Product details
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start"><p>This sofa converts quickly and easily into a spacious bed when you remove the back cushions and pull out the underframe.</p>
+
+              <br> Sofa, chaise and double bed in one.<br>
+                
+              <br>  Storage space under the chaise. The lid stays open so you can safely and easily take things in and out.<br>
+                
+              <br>You can place the chaise section to the left or right of the sofa, and switch whenever you like.<br>
+                
+              <br>   10 year warranty. Read about the terms in the warranty brochure.<br>
+                
+              <br>   Designer
+                IKEA of Sweden<br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                What's included
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start">This product is made up of more than one component. You can find the details of these components below. <br>
+
+                <br> 1 x Backrest f/sleeper sectional,3-seat
+                FRIHETEN
+                <br>
+                1 x Chaise for corner sofa-bed
+                FRIHETEN
+                <br>
+                1 x Seat section for corner sofa-bed
+                FRIHETEN
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Measurements
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start">Depth: 151 cm (59 1/2 ")                <br>
+
+                Bed width: 140 cm (55 1/8 ")                <br>
+                
+                Bed length: 204 cm (80 3/8 ")                <br>
+                
+                Height including back cushions: 86 cm (33 7/8 ")                <br>
+                
+                Backrest height: 66 cm (26 ")                <br>
+                
+                Width: 230 cm (90 1/2 ")                <br>
+              </div>
+            </div>
+            
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
+                Ratings and reviews
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start">
+                <p class="fw-bold">Unknown user</p>Decent sofa bed for the price
+                Using this as my main lounge and overall happy with it. 
+                It is comfortable enough when sitting as a lounge, and when used as a sofa bed.
+                 The sofa bed is super easy to convert, and it's way more comfortable than fold out frame style with springs.
+                  The fabric on the chaise lounge, which is where I sit, is a bit loose now, after 2.5 months of use.
+                   But overall I am happy with it and it is very good .
+
+                   <hr class="my-3">
+                   Great bang for your buck
+This item works just as well as you expected. Perfect for a one bedroom or a studio apartment. I love how you can chase the orientation of the chaise as well. It is a bit rough to set the futon up and break it down but hey that’s bang for your buck! It is extremely firm as well. I don’t see an issue because over the years it will soften up!! So with the few kinks it has I recommend this product!!
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="../images/sofa5.png" class="w-75 h-75">
+      </div>
+   </div>
+  </div>
+
+
+
+
+<!-- swiper ------------------->
+<section>  <h4 class="mx-2 my-5 fw-bold">Related products</h4>
+  <div class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/swipersofa1.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">FRIHETEN</h6>
+            <p class="card-text fs-6 mb-4">Corner sofa-bed with storage</p>
+            <p class="fw-bolder price mb-1">$3,000.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $1,2999</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa10.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">LYCKSELE LÖVÅS</h6>
+            <p class="card-text fs-6 mb-4">sofa-bed with Footstand</p>
+            <p class="fw-bolder price mb-1">$4,999.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $5,299</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa11.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">FRIHETEN / KLAGSHAMN</h6>
+            <p class="card-text fs-6 mb-4">Sleeper sofa-bed with storage</p>
+            <p class="fw-bolder price mb-1">$1,999.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $2,099</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa12.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">BÅRSLÖV</h6>
+            <p class="card-text fs-6 mb-4"> sofa-bed frame</p>
+            <p class="fw-bolder price mb-1">$490.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $899.00</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa13.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">NYHAMN</h6>
+            <p class="card-text fs-6 mb-4">Footstand</p>
+            <p class="fw-bolder price mb-1">$390.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $999</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa14.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">FRIDHULT</h6>
+            <p class="card-text fs-6 mb-4">Corner sofa-bed with storage</p>
+            <p class="fw-bolder price mb-1">$2,490.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $1,2999</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa15.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">KIVIK</h6>
+            <p class="card-text fs-6 mb-4">Bamboo Moda</p>
+            <p class="fw-bolder price mb-1">$590.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $899</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa16.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">FRIHETEN</h6>
+            <p class="card-text fs-6 mb-4">Corner sofa-bed with storage</p>
+            <p class="fw-bolder price mb-1">$2,490.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $1,2999</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card border-0 text-start" style="width: 18rem;">
+          <img src="../images/sofa12.png" class="swiperimg mx-3" alt="...">
+          <div class="card-body">
+            <h6 class="card-title mb-1">MORABO</h6>
+            <p class="card-text fs-6 mb-4">storage</p>
+            <p class="fw-bolder price mb-1">$150.00</p>
+            <p class="swiperprice mb-2"><span>Previous Price : $299</span></p>
+            <p class="star mb-4"><i class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-fill mx-1"></i><i class="bi bi-star-fill mx-1"></i><i
+                class="bi bi-star-half mx-1"></i>(5)</p>
+            <div class="d-flex justify-content-start cartcheck"><a href=""><i
+                  class="bi bi-cart-check cartcheck"></i></a><i class="bi bi-heart mx-4"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div></section></div>
+  </div>
+
+<!-- Image Gallery -->
+ 
+ <section class="container my-5 ">
+  <h4 class="my-5 fw-bold">Recently Viewed Products</h4>
+  <div class="gallery">
+
+    <img class="four-grid-cells"
+        src="../images/sofa1.jpg"
+        alt="Northern Winter Sky Image" />
+
+    <img
+        src="../images/sofa2.jpg"
+        alt="Shining Stars Image" />
+
+    <img class="wide-image"
+        src="../images/sofa8.png"
+        alt="A River Flowing Image" />
+
+    <img
+        src="../images/sofa4.png"
+        alt="A cloudy Mountain Image" />
+
+    <img
+        src="../images/sofa7.png"
+        alt="A Winter Rainbow Image" />
+
+    <img class="wide-image"
+        src="../images/sofa3.png"
+        alt="A Clean Mountain Lake" />
+
+    <img
+        src="../images/sofa10.png"
+        alt="Shining Stars Image" />
+
+</div>
+ </section>
+  <!------------------------- Footer -------------------------------->
+  <section class="black">
+    <div class="container pt-5 pb-3">
+      <div class="row pb-5 pt-5">
+        <div class="col-lg-4">
+          <h6 class="footer-title mb-4 pl-3">ABOUT US</h6>
+          <div class="list">
+            <li class="foot mb-3 pt-2">Nullam tristique tortor nibh,
+              in viverra libero sollicitudin ac.
+              Suspendisse quis lacinia ipsum. Etiam scelerisque sit amet lectus quis lacinia. Sed.</li>
+            <li><i class="fa fa-map-marker icon mb-3 px-1" aria-hidden="true"></i> 218 Fifth Avenue, HeavenTower NewYork
+              City</li>
+            <li><i class="fa fa-phone icon mb-3 px-1" aria-hidden="true"></i> (+68) 123 456 7890</li>
+            <li><i class="fa fa-envelope-o icon mb-3 px-1" aria-hidden="true"></i> Hot-Support@Rhyssa.com</li>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="footer-title mb-4 pl-3">MY ACCOUNT</h6>
+          <div class="list pt-2">
+            <li class="list1">Sign In</li>
+            <li class="list1">View Cart</li>
+            <li class="list1">My Wishlist</li>
+            <li class="list1">Terms & Conditions</li>
+            <li class="list1"> Contact us</li>
+            <li class="list1">Track My Order</li>
+            <li class="list1"> Help</li>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="footer-title mb-4  pl-3">INFORMATION</h6>
+          <div class="list pt-2">
+            <li class="list1">Specials</li>
+            <li class="list1">New products</li>
+            <li class="list1">Best sellers </li>
+            <li class="list1"> Our stores</li>
+            <li class="list1">Contact us</li>
+            <li class="list1">Sitemap</li>
+            <li class="list1"> Blog</li>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <h6 class="footer-title mb-4  pl-3">FOLLOW US</h6>
+          <div class="list pt-2">
+            <li class="list1">Facebook</li>
+            <li class="list1"> Instagram</li>
+            <li class="list1">Twitter</li>
+            <li class="list1"> Pinterest</li>
+            <li class="list1"> Linkin</li>
+            <li class="list1">Youtube</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="copyright">© Copyright 2019 <b><span class="rhyssa"> Ikeaaa.</span></b> All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 rights">
+          <img src="../images/visa.png" class="footicon ">
+          <img src="../images/amex.png" class="footicon ">
+          <img src="../images/apple.png" class="footicon ">
+          <img src="../images/mastercard.png" class="footicon ">
+          <img src="../images/paypal.png" class="footicon ">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+        autoplay: {
+        delay: 3000, // Time in milliseconds between automatic transitions (3000ms = 3s)
+        disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+      },
+      loop: true, // Optional: Enable looping of slides
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+            const quantityInput = document.getElementById('quantity');
+            const addToCartButton = document.getElementById('add-to-cart');
+            const increaseQuantityButton = document.getElementById('increase-quantity');
+            const decreaseQuantityButton = document.getElementById('decrease-quantity');
+
+            // Load quantity from localStorage
+            const savedQuantity = localStorage.getItem('cartQuantity');
+            if (savedQuantity) {
+                quantityInput.value = savedQuantity;
+            }
+
+            // Increase quantity
+            increaseQuantityButton.addEventListener('click', () => {
+                let quantity = parseInt(quantityInput.value);
+                quantity += 1;
+                quantityInput.value = quantity;
+                localStorage.setItem('cartQuantity', quantity);
+            });
+
+            // Decrease quantity
+            decreaseQuantityButton.addEventListener('click', () => {
+                let quantity = parseInt(quantityInput.value);
+                if (quantity > 1) {
+                    quantity -= 1;
+                    quantityInput.value = quantity;
+                    localStorage.setItem('cartQuantity', quantity);
+                }
+            });
+
+            // Event listener for the Add to Cart button
+            addToCartButton.addEventListener('click', () => {
+                const quantity = quantityInput.value;
+                localStorage.setItem('cartQuantity', quantity);
+                alert('Quantity added to cart!');
+            });
+
+            // Update quantity in localStorage on input change
+            quantityInput.addEventListener('change', () => {
+                const quantity = quantityInput.value;
+                localStorage.setItem('cartQuantity', quantity);
+            });
+        });
+  </script>
+</body>
+
+</html>
