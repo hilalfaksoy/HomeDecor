@@ -16,101 +16,34 @@
 </head>
 
 <body>
-  <!-- header  -->
-  <div class="productPage">
-    <div class="bg-decor">
-      <div class="d-flex flex-row mb-3 justify-content-center text-white">
-        <div class="p-2 mx-4"><i class="fa fa-phone text-white mx-2" aria-hidden="true"></i>Order By Phone</div>
-        <div class="p-2 mx-5"><i class="bi bi-people-fill mx-2"></i>Family Sale</div>
-        <div class="p-2 mx-4"><i class="bi bi-receipt mx-2"></i>Sale</div>
-      </div>
-    </div>
-    <div class="container">
+  <header>
+    <div class="nav-header">
+      <nav class="navbar">
+          <div id="username-welcome"><p>Welcome! <span id="username"></span></p></div>
+        <a href="#" class="hamburger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
 
-      <nav class="navbar navbar-expand-lg ">
-
-        <div class="container-fluid">
-
-          <a class="navbar-brand" href="#"><img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg"></a>
-          <div class="col-md-3">
-
-            <div class="form">
-              <i class="fa fa-search"></i>
-              <input type="text" class="form-control form-input" placeholder="Search anything...">
-              <span class="left-pan"><i class="fa fa-camera"></i></span>
-            </div>
-
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-truck mx-2"></i>Enter
-                  Postal Code</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-shop mx-2"></i>Select
-                  store</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-person mx-2"></i>hey! Login
-                  or Sign up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-globe2 mx-2"></i></i>EN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="#"><i class="bi bi-suit-heart"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-3" aria-current="page" href="./cart.html"><i class="bi bi-bag"></i></a>
-              </li>
-            </ul>
-            <i class="fa fa-heart-o text-black" aria-hidden="true"></i>
-          </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="landingPage.html"> Home</a></li>
+            <li><a href="landingPage.html#product-newin"> Products</a></li>
+            <li><a href="contractor_listing.html"> Contractor Listing</a></li>
+            <li><a id="guest-profile" href="UserProfile.html"> User Profile</a></li>  
+            <li><a id="login-button" href="#"> LogIn</a></li>
+          </ul>
         </div>
       </nav>
-      <hr class="line my-2">
-      <ul class="nav tab
-       nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-            type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
-              class="bi bi-basket3 mx-2"></i>shop products</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
-              class=" mx-2bi bi-house-door"></i>Explore Rooms</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Shop deals</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Back to school</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Ideas and Inspiration</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">For business</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Service and planning</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Help and support</button>
-        </li>
+    </div>
+  </header>
+  <!-- header  -->
+  <div class="productPage">
+   
+    <div class="container">
+
+     
 
       </ul>
       <div class="tab-content" id="pills-tabContent">
@@ -578,74 +511,35 @@ This item works just as well as you expected. Perfect for a one bedroom or a stu
 
 </div>
  </section>
-  <!------------------------- Footer -------------------------------->
-  <section class="black">
-    <div class="container pt-5 pb-3">
-      <div class="row pb-5 pt-5">
-        <div class="col-lg-4">
-          <h6 class="footer-title mb-4 pl-3">ABOUT US</h6>
-          <div class="list">
-            <li class="foot mb-3 pt-2">Nullam tristique tortor nibh,
-              in viverra libero sollicitudin ac.
-              Suspendisse quis lacinia ipsum. Etiam scelerisque sit amet lectus quis lacinia. Sed.</li>
-            <li><i class="fa fa-map-marker icon mb-3 px-1" aria-hidden="true"></i> 218 Fifth Avenue, HeavenTower NewYork
-              City</li>
-            <li><i class="fa fa-phone icon mb-3 px-1" aria-hidden="true"></i> (+68) 123 456 7890</li>
-            <li><i class="fa fa-envelope-o icon mb-3 px-1" aria-hidden="true"></i> Hot-Support@Rhyssa.com</li>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <h6 class="footer-title mb-4 pl-3">MY ACCOUNT</h6>
-          <div class="list pt-2">
-            <li class="list1">Sign In</li>
-            <li class="list1">View Cart</li>
-            <li class="list1">My Wishlist</li>
-            <li class="list1">Terms & Conditions</li>
-            <li class="list1"> Contact us</li>
-            <li class="list1">Track My Order</li>
-            <li class="list1"> Help</li>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <h6 class="footer-title mb-4  pl-3">INFORMATION</h6>
-          <div class="list pt-2">
-            <li class="list1">Specials</li>
-            <li class="list1">New products</li>
-            <li class="list1">Best sellers </li>
-            <li class="list1"> Our stores</li>
-            <li class="list1">Contact us</li>
-            <li class="list1">Sitemap</li>
-            <li class="list1"> Blog</li>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <h6 class="footer-title mb-4  pl-3">FOLLOW US</h6>
-          <div class="list pt-2">
-            <li class="list1">Facebook</li>
-            <li class="list1"> Instagram</li>
-            <li class="list1">Twitter</li>
-            <li class="list1"> Pinterest</li>
-            <li class="list1"> Linkin</li>
-            <li class="list1">Youtube</li>
-          </div>
-        </div>
+ <footer>
+           
+  <div class="footer-container">
+      <div class="footer-section">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.955573084334!2d-79.3380409242937!3d43.77378104462437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sca!4v1722216662870!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="copyright">© Copyright 2019 <b><span class="rhyssa"> Home Decor</span></b> All Rights Reserved.</p>
-        </div>
-        <div class="col-md-6 rights">
-          <img src="./images/visa.png" class="footicon ">
-          <img src="./images/amex.png" class="footicon ">
-          <img src="./images/apple.png" class="footicon ">
-          <img src="./images/mastercard.png" class="footicon ">
-          <img src="./images/paypal.png" class="footicon ">
-        </div>
+      <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+          </ul>
       </div>
-    </div>
-  </section>
+      <div class="footer-section">
+          <h3>Contact Us</h3>
+          <form>
+              <input type="text" placeholder="   Your name"><br><br>
+              <input type="text" placeholder="   Your email"><br><br>
+              <textarea rows="4" cols="60" placeholder="  Your message">
+                 
+              </textarea>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Home Decor. All rights reserved.</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
@@ -722,6 +616,8 @@ This item works just as well as you expected. Perfect for a one bedroom or a stu
             });
         });
   </script>
+
+<script src="js/displayUsername.js"></script>
 </body>
 
 </html>
