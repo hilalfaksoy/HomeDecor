@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (loggedInUser) {
         const usernameElement = document.getElementById('username');
         usernameElement.textContent = capitalizeFirstLetter(loggedInUser.name);
+        document.getElementById("login-button").style.display = "none";
     } else {
         // If no user is logged in, display "Guest"
         const usernameElement = document.getElementById('username');
