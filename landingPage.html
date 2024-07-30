@@ -12,12 +12,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/landing.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   </head>
   <body>
     <header>
       <div class="nav-header">
         <nav class="navbar">
-          <div id="username-welcome"><p>Welcome! User</p></div>
+          <div id="username-welcome"><p>Welcome! <span id="username"></span></p></div>
+
           <a href="#" class="hamburger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -31,7 +34,7 @@
               <li><a href="#"> Contractor Listing</a></li>
               <li><a href="#"> Profile</a></li>
               <li>
-                <a href="#" style="background-color: #444f36; color: white; height: 25px">
+                <a href="Login/Login.html" style="background-color: #444f36; color: white; height: 25px">
                   LogIn
                 </a>
               </li>
@@ -54,7 +57,7 @@
 
         <div class="mySlides fade">
           <img src="images/banner3.jpg" style="width: 100%; height: 650px" />
-      
+        </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -68,41 +71,48 @@
 </div>
 
 
-    <!-- For New-In collection -->
+    <!-- For Categories -->
     <div class="container" style="background-color: #f0f0f0;">
         <h1 class="section-header">New - In</h1>
         <div id="product-newin">
-            <section class="newin-collection">
+            <section class="categories-collection">
                 
-                <div class="product-list">
-                    <div class="product" id="product-1">
-                    <img src="images/product1.jpg" />
-                    <p class="product-name">Name</p>
-                    <p class="product-price">$400.00</p>
+                <div class="category-list">
+                  <a class="category-link" href="bed-listing.html" target="_blank">
+                    <div class="category" id="product-1">
+                    <img src="images/bed5.jpg" />
+                    <p class="category-name">Bed</p>
                 </div>
-                <div class="product" id="product-2">
+              </a>
+              <a class="category-link" href="product-listing.html" target="_blank">
+                <div class="category" id="product-2">
                     <img src="images/product2.jpg" />
-                    <p class="product-name">Name</p>
-                    <p class="product-price">$400.00</p>
+                    <p class="category-name">Sofa</p>
+                    
                 </div>
-                <div class="product" id="product-3">
+              </a>
+              <a class="category-link" href="light-listing.html" target="_blank">
+                <div class="category" id="product-3">
                     <img src="images/product3.jpg" />
-                    <p class="product-name">Name</p>
-                    <p class="product-price">$400.00</p>
+                    <p class="category-name">Lights</p>
+                    
                 </div>
-                <div class="product" id="product-4">
-                    <img src="images/product4.jpg" />
-                    <p class="product-name">Name</p>
-                    <p class="product-price">$400.00</p>
+              </a>
+              <a class="category-link" href="pots-plants.html" target="_blank">
+                <div class="category" id="product-4">
+                    <img src="images/plants5.jpg" />
+                    <p class="category-name">Pots and Plants</p>
+                    
                 </div>
+              </a>
                 </div>
             </section>
         </div>
     </div>
 
-    <!-- For Deal of the Week -->
-    <section id="deals-of-week">
-      <h1 class="section-header">Deals of the Day</h1>
+    <!-- For Deal of the Month -->
+    <section id="deals-of-month">
+      <h1 class="section-header">Deals of the Month</h1>
       <div class="time-countdown">
         <div class="box-counter" id="day-counter">
           <p id="day-timer" class="timer"></p>

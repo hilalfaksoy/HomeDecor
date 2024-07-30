@@ -10,6 +10,26 @@ var $ = function (id) {
   return document.getElementById(id);
 };
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Retrieve the logged-in user from localStorage
+  const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+  // If a user is logged in, update the welcome message
+  if (loggedInUser) {
+      const usernameElement = document.getElementById('username');
+      usernameElement.textContent = capitalizeFirstLetter(loggedInUser.name);
+  } else {
+      // If no user is logged in, display "Guest"
+      const usernameElement = document.getElementById('username');
+      usernameElement.textContent = 'Guest';
+  }
+});
+
+function capitalizeFirstLetter(string) {
+  if (!string) return ''; // Check if the string is empty or undefined
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
 // For slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -45,6 +65,7 @@ function showSlides(n) {
 }
 
 
+
   const countDown = new Date("August 30, 2024 11:45:53").getTime();
   const second = 1000;
   const minute = second * 60;
@@ -58,11 +79,6 @@ function showSlides(n) {
     var hours = Math.floor((distance % day) / hour);
     var minutes = Math.floor((distance % hour) / minute);
     var seconds = Math.floor((distance % minute) / second);
-
-    console.log(days);
-    console.log(hours);
-    console.log(minutes);
-    console.log(seconds);
 
     document.getElementById("day-timer").innerHTML = days;
     document.getElementById("hour-timer").innerHTML = hours;
