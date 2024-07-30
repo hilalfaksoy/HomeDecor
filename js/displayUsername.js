@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // If no user is logged in, display "Guest"
         const usernameElement = document.getElementById('username');
         usernameElement.textContent = 'Guest';
+        document.getElementById("guest-profile").style.display = "none";
     }
   });
 
