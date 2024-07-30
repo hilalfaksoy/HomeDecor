@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const usernameElement = document.getElementById('username');
       usernameElement.textContent = 'Guest';
   }
+
+  if(loggedInUser) {
+    document.getElementById("login-button").hide();
+  }
 });
 
 function capitalizeFirstLetter(string) {
