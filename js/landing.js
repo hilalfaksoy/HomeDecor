@@ -89,3 +89,11 @@ function showSlides(n) {
     document.getElementById("second-timer").innerHTML = seconds;
   }, 1000);
 
+// Attach event listeners to menu items
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default link behavior
+      const url = this.getAttribute('data-url');
+      window.location.href = url; // Navigate to the URL
+  });
+});
