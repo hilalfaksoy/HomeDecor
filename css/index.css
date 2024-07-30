@@ -148,15 +148,15 @@ figure {
 }
 
 .black {
-    background-color: whitesmoke;
+    background-color: #008080;
     color: white;
 }
 
 .footer-title {
-    color: black;
+    color: white;
     font-size: 16px;
     font-weight: 700;
-    border-left: 3px solid black;
+    border-left: 3px solid white;
     padding-left: 15px;
 }
 
@@ -164,21 +164,21 @@ figure {
     font-family: 'Heebo', sans-serif;
     font-size: 15px;
     line-height: 28px;
-    color: black;
+    color: white;
     font-weight: 400;
 }
 
 .list1 {
     margin-bottom: 7px;
-    color: black;
+    color: white;
 }
 
 .list1:hover {
-    color: black;
+    color: white;
 }
 
 .icon {
-    color: black;
+    color: white;
 }
 
 .foot {
@@ -186,7 +186,7 @@ figure {
 }
 
 .rhyssa {
-    color: black;
+    color: white;
 }
 
 .copyright {
@@ -196,7 +196,9 @@ figure {
     margin-top: 17px;
     margin-bottom: 17px;
 }
-
+.bg-decor{
+    background-color: #008080;
+}
 .rights {
     text-align: right;
 }
@@ -272,7 +274,7 @@ font-size: 13px;
     font-size: 12px;
   }
   .cartcheck a{
-    background-color: #0c59ab;
+    background-color: #008080;
     border-radius: 30px;
     color: white;
     width: 16%;
