@@ -76,7 +76,7 @@ function loginUser(event) {
         console.log("Login successful");
 
          // Redirect to landing page
-         window.location.href = '../Landing-Product Listing/landingPage.html'; // Update this with the actual landing page URL
+         window.location.href = 'landingPage.html'; // Update this with the actual landing page URL
 
     } else {
         loginMessage.textContent = "Invalid email or password.";
