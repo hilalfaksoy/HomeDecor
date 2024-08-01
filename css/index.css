@@ -228,6 +228,10 @@ figure {
 
     width: 74vw;
   }  
+  .offcanvas{
+
+    --bs-offcanvas-width: 364px;
+  }
   .offcanvas2 {
     position: fixed;
     bottom: 0;
